@@ -1,0 +1,37 @@
+.clients {
+  @include style();
+}
+
+.clients__link {
+  @include style(flex, center, center);
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  transition: var(--functcii--transition);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+  transition: var(--functcii--transition);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.box-clients {
+  padding-top: 102px;
+  padding-bottom: 94px;
+}

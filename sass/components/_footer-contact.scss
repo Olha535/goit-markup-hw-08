@@ -1,0 +1,25 @@
+.address-item__city {
+  @include font();
+  color: var(--color-white);
+  margin-bottom: 9px;
+}
+
+.contact-list-dark__info {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.contact-list-dark__mail-tel {
+  @include font();
+  color: rgba(255, 255, 255, 0.6);
+  background: var(--background-footer);
+}
+
+.address-item {
+  font-style: normal;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
