@@ -1,12 +1,33 @@
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  .header & {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.main-footer-box {
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/*.main-footer-box {
   display: flex;
   align-items: baseline;
-}
+}*/

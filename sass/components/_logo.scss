@@ -1,4 +1,25 @@
 .logo {
+  @include font(24px, 1.16);
+  font-family: var(--secondari-font);
+  font-weight: 700;
+  font-style: normal;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  &_theme {
+    &_light {
+      color: #000000;
+    }
+
+    &_dark {
+      color: var(--color-white);
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/*.logo {
   @include font(26px, 1.19);
   font-family: var(--secondari-font);
   font-weight: 700;
@@ -16,13 +37,13 @@
       margin-bottom: 20px;
     }
   }
-}
+}*/
 
 .logo__logo-web {
   color: var(--accent-color);
 }
 
-.header__container {
+/*.header__container {
   display: flex;
   align-items: center;
-}
+}*/

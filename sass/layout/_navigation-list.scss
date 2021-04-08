@@ -1,4 +1,8 @@
 .menu-list {
+  display: none;
+}
+
+/*.menu-list {
   @include style(flex, center, center);
   margin-left: auto;
 }
@@ -38,4 +42,4 @@
 
   margin-bottom: -32px;
   border-radius: 2px;
-}
+}*/
