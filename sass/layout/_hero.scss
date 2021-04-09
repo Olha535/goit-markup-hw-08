@@ -1,4 +1,23 @@
-.hero {
+@media screen and (max-width: 767px) {
+  .hero {
+    color: var(--color-white);
+    background-color: var(--background-footer);
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .hero__main-heading {
+    @include font(26px, 1.61, 0.06em);
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+/*.hero {
   color: var(--color-white);
   background-color: var(--background-footer);
   text-align: center;
@@ -31,4 +50,4 @@
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 696px;
-}
+}*/
