@@ -87,6 +87,15 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
+  .components-title {
+    @include font(28px, 1.17);
+    font-weight: 700;
+    text-align: center;
+    color: var(--accent-text-color);
+    padding: 0px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
 
   .team-list__heading {
     @include font(16px, 1.18);
