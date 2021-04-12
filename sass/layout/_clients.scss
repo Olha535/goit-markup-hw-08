@@ -1,37 +1,99 @@
+.box-clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.components-title {
+  @include font(28px, 1.17);
+  font-weight: 700;
+  text-align: center;
+  color: var(--accent-text-color);
+  margin-bottom: 30px;
+  padding: 0;
+}
+
 .clients {
-  @include style();
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.clients__item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.clients > .clients__item {
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 
 .clients__link {
   @include style(flex, center, center);
 
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   color: #afb1b8;
-  transition: var(--functcii--transition);
-
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-  }
 }
 
 .clients__icon {
   fill: currentColor;
-  transition: var(--functcii--transition);
+}
 
-  .clients__link:hover &,
-  .clients__link:focus & {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .clients > .clients__item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
+
+  .clients__link {
+    width: 226px;
   }
 }
 
-.box-clients {
-  padding-top: 102px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .clients {
+    @include style();
+  }
+
+  .clients > .clients__item {
+    flex-basis: calc(100% / 6 - var(--card-set-gap));
+  }
+
+  .clients__link {
+    @include style(flex, center, center);
+
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #afb1b8;
+    transition: var(--functcii--transition);
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+  }
+
+  .clients__icon {
+    fill: currentColor;
+    transition: var(--functcii--transition);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+
+  .box-clients {
+    padding-top: 102px;
+    padding-bottom: 94px;
+  }
 }
