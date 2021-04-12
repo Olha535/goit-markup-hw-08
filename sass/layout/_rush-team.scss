@@ -52,25 +52,62 @@
   background: #f5f4fa;
 }
 
+@media screen and (max-width: 767px) {
+  .team-list__item {
+    position: relative;
+    background: var(--color-white);
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-list {
+  .team {
     padding-bottom: 60px;
+    padding-top: 60px;
+    background: #f5f4fa;
+  }
+
+  .team-list {
     display: flex;
     flex-wrap: wrap;
-
+    padding-bottom: 0;
     list-style: none;
     margin-left: -30px;
     margin-top: -30px;
-    background: #f5f4fa;
+  }
+
+  .team-list__item {
+    position: relative;
+    background: var(--color-white);
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
   }
 
   .team-list__item {
     margin-left: 30px;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   .team-list > .team-list__item {
     flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
+
+  .team-list__box {
+    margin: 0 auto;
+    padding: 30px 32px;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .social-list {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -88,12 +125,11 @@
     border-radius: 0px 0px 4px 4px;
   }
   .components-title {
-    @include font(28px, 1.17);
+    @include font(36px, 1.16);
     font-weight: 700;
     text-align: center;
     color: var(--accent-text-color);
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .team-list__heading {
@@ -113,7 +149,7 @@
 
   .team {
     padding-top: 94px;
-    padding-bottom: 86px;
+    padding-bottom: 0px;
   }
 
   .team-list__item {
@@ -122,6 +158,35 @@
 
     &:not(:last-child) {
       margin-right: 30px;
+    }
+  }
+  .social-list {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .team-list__item {
+    position: relative;
+    background: var(--color-white);
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .social-list__icon {
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+      color: var(--color-white);
+    }
+  }
+
+  .social-list__link {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--accent-color);
     }
   }
 }

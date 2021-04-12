@@ -44,15 +44,12 @@
     height: 4px;
     background-color: var(--accent-color);
 
-    margin-bottom: -32px;
+    margin-bottom: -23px;
     border-radius: 2px;
   }
 }
 
-/*.menu-list {
-  @include style(flex, center, center);
-  margin-left: auto;
-}
+/*
 
 .menu-list__link {
   @include font(14px, 1.14, 0.02em);

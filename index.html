@@ -77,10 +77,14 @@
         </button>
         <ul class="mobile-menu__list list">
           <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link link">Студия</a>
+            <a href="" class="mobile-menu__link linner link" href="./index.html"
+              >Студия</a
+            >
           </li>
           <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link link">Портфолио</a>
+            <a href="" class="mobile-menu__link link" href="./portfolio.html"
+              >Портфолио</a
+            >
           </li>
           <li class="mobile-menu__item">
             <a href="" class="mobile-menu__link link">Контакты</a>
@@ -188,34 +192,84 @@
 
           <ul class="list services-list">
             <li class="services-list__item">
-              <img
-                src="./images/img-studio/features1.png"
-                alt="Работа с ноутом"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/wdesktop-app1x.webp  1x,
+                    ./images/services/wdesktop-app@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/services/desktop-app1x.jpg  1x,
+                    ./images/services/desktop-app@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/services/desktop-app1x.jpg"
+                  alt="Работа с ноутом"
+                />
+              </picture>
               <div class="services-list__overlay">
                 <h3 class="services-list__text">Декстопные приложения</h3>
               </div>
             </li>
             <li class="services-list__item">
-              <img
-                src="./images/img-studio/features2.png"
-                alt="Работа с телефоном"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/wmobile-app1x.webp  1x,
+                    ./images/services/wmobile-app@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/services/mobile-app1x.jpg  1x,
+                    ./images/services/mobile-app@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img-studio/features2.png"
+                  alt="Работа с телефоном"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="services-list__overlay">
                 <h3 class="services-list__text">Мобильные приложения</h3>
               </div>
             </li>
             <li class="services-list__item">
-              <img
-                src="./images/img-studio/ftatures3.png"
-                alt="Работа с планшетом"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/wdesign1x.webp  1x,
+                    ./images/services/wdesign@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/services/design1x.jpg  1x,
+                    ./images/services/design@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/services/design1x.jpg"
+                  alt="Работа с планшетом"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="services-list__overlay">
                 <h3 class="services-list__text">Дизайнерские решения</h3>
               </div>
@@ -235,8 +289,8 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop-igor1x.webp  1x,
-                    ./images/team/desktop-igor@2x.webp 2x
+                    ./images/team/desktopw-igor1x.webp  1x,
+                    ./images/team/desktopw-igor@2x.webp 2x
                   "
                   type="image/webp"
                   media="(min-width: 1200px)"
@@ -251,8 +305,8 @@
 
                 <source
                   srcset="
-                    ./images/team/tablet-igor1x.webp  1x,
-                    ./images/team/tablet-igor@2x.webp 2x
+                    ./images/team/tabletw-igor1x.webp  1x,
+                    ./images/team/tabletw-igor@2x.webp 2x
                   "
                   type="image/webp"
                   media="(min-width: 768px)"
@@ -267,8 +321,8 @@
 
                 <source
                   srcset="
-                    ./images/team/mobile-igor1x.webp  1x,
-                    ./images/team/mobile-igor@2x.webp 2x
+                    ./images/team/mobilew-igor1x.webp  1x,
+                    ./images/team/mobilew-igor@2x.webp 2x
                   "
                   type="image/webp"
                 />
@@ -322,8 +376,8 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop-olga1x.webp  1x,
-                    ./images/team/desktop-olga@2x.webp 2x
+                    ./images/team/desktopw-olga1x.webp  1x,
+                    ./images/team/desktopw-olga@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/webp"
@@ -339,8 +393,8 @@
 
                 <source
                   srcset="
-                    ./images/team/tablet-olga1x.webp  1x,
-                    ./images/team/tablet-olga@2x.webp 2x
+                    ./images/team/tabletw-olga1x.webp  1x,
+                    ./images/team/tabletw-olga@2x.webp 2x
                   "
                   media="(min-width: 768px)"
                   type="image/webp"
@@ -356,8 +410,8 @@
 
                 <source
                   srcset="
-                    ./images/team/mobile-olga1x.webp  1x,
-                    ./images/team/mobile-olga@2x.webp 2x
+                    ./images/team/mobilew-olga1x.webp  1x,
+                    ./images/team/mobilew-olga@2x.webp 2x
                   "
                   media="(max-width: 768px)"
                   type="image/webp"
@@ -414,8 +468,8 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop-nikolay1x.webp  1x,
-                    ./images/team/desktop-nikolay@2x.webp 2x
+                    ./images/team/desktopw-nikolay1x.webp  1x,
+                    ./images/team/desktopw-nikolay@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/webp"
@@ -431,8 +485,8 @@
 
                 <source
                   srcset="
-                    ./images/team/tablet-nikolay1x.webp  1x,
-                    ./images/team/tablet-nikolay@2x.webp 2x
+                    ./images/team/tabletw-nikolay1x.webp  1x,
+                    ./images/team/tabletw-nikolay@2x.webp 2x
                   "
                   media="(min-width: 768px)"
                   type="image/webp"
@@ -448,8 +502,8 @@
 
                 <source
                   srcset="
-                    ./images/team/mobile-nikolay1x.webp  1x,
-                    ./images/team/mobile-nikolay@2x.webp 2x
+                    ./images/team/mobilew-nikolay1x.webp  1x,
+                    ./images/team/mobilew-nikolay@2x.webp 2x
                   "
                   media="(max-width: 768px)"
                   type="image/webp"
@@ -508,8 +562,8 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop-michail1x.webp  1x,
-                    ./images/team/desktop-michail@2x.webp 2x
+                    ./images/team/desktopw-michail1x.webp  1x,
+                    ./images/team/desktopw-michail@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/webp"
@@ -525,8 +579,8 @@
 
                 <source
                   srcset="
-                    ./images/team/tablet-michail1x.webp  1x,
-                    ./images/team/tablet-michail@2x.webp 2x
+                    ./images/team/tabletw-michail1x.webp  1x,
+                    ./images/team/tabletw-michail@2x.webp 2x
                   "
                   media="(min-width: 768px)"
                   type="image/webp"
@@ -542,8 +596,8 @@
 
                 <source
                   srcset="
-                    ./images/team/mobile-michail1x.webp  1x,
-                    ./images/team/mobile-michail@2x.webp 2x
+                    ./images/team/mobilew-michail1x.webp  1x,
+                    ./images/team/mobilew-michail@2x.webp 2x
                   "
                   media="(max-width: 768px)"
                   type="image/webp"
@@ -738,7 +792,7 @@
       </div>
     </footer>
 
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__dutton-close" data-modal-close>
           <svg class="mobal__close-icon" width="11" height="11">
@@ -822,7 +876,7 @@
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
       </div>
-    </div>-->
+    </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

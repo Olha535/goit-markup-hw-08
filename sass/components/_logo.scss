@@ -22,7 +22,7 @@
 .logo__logo-web {
   color: var(--accent-color);
 }
-
+/*
 @media screen and (min-width: 768px) {
   .logo {
     @include font(24px, 1.16);
@@ -44,9 +44,9 @@
       }
     }
   }
-}
+}*/
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
   .logo {
     @include font(26px, 1.19);
     font-family: var(--secondari-font);
@@ -66,4 +66,4 @@
       }
     }
   }
-}
+}*/
