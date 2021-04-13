@@ -26,6 +26,7 @@
   }
 
   .burger-btn {
+    @include style(flex, center, center);
     background-color: transparent;
     border: none;
     padding: 0;
@@ -37,6 +38,12 @@
       fill: var(--accent-color);
       outline: none;
     }
+  }
+
+  .burger__icon {
+    @include style(flex, center, center);
+    width: 40px;
+    height: 40px;
   }
 
   .mobile-menu__close {
@@ -57,11 +64,6 @@
   }
 
   .mobile-menu__icon {
-    width: 11px;
-    height: 11px;
-  }
-
-  .burger__icon {
     width: 40px;
     height: 40px;
   }
@@ -203,6 +205,25 @@
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
+  }
+  .logo {
+    @include font(24px, 1.16);
+    font-family: var(--secondari-font);
+    font-weight: 700;
+    font-style: normal;
+
+    &_theme {
+      &_light {
+        color: #000000;
+        padding-top: 26px;
+        padding-bottom: 26px;
+      }
+
+      &_dark {
+        color: var(--color-white);
+        display: block;
+      }
+    }
   }
 }
 
