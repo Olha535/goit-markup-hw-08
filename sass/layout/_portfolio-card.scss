@@ -89,9 +89,19 @@
 
 @media screen and (min-width: 768px) {
   .cards-list__item {
+    display: flex;
     .cards-list > & {
       flex-basis: calc(100% / 2 - var(--card-set-gap));
     }
+  }
+
+  .cards-list__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-content {
+    flex-grow: 1;
   }
 }
 
