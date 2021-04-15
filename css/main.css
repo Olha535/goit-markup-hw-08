@@ -1715,9 +1715,20 @@ img {
     justify-content: center;
     align-items: flex-start;
   }
+  .social-dark__link {
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: --functcii--transition;
+  }
   .social-dark__link:hover, .social-dark__link:focus {
     background-color: var(--accent-color);
     color: var(--color-white);
+  }
+  .social-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: --functcii--transition;
   }
   .social-list__link:hover .social-list__icon,
   .social-list__link:focus .social-list__icon {

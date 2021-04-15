@@ -167,6 +167,7 @@
     width: 206px;
     margin-left: 70px;
   }
+
   .footer-form__container {
     display: flex;
     flex-direction: column;
@@ -224,6 +225,9 @@
   }
 
   .social-dark__link {
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: var(--functcii--transition);
     &:hover,
     &:focus {
       background-color: var(--accent-color);
@@ -232,6 +236,11 @@
   }
 
   .social-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: var(--functcii--transition);
+
     .social-list__link:hover &,
     .social-list__link:focus & {
       color: var(--color-white);
