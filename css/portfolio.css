@@ -1171,7 +1171,7 @@ img {
   .social-dark__link {
     color: var(--color-white);
     background-color: rgba(255, 255, 255, 0.1);
-    transition: --functcii--transition;
+    transition: var(--functcii--transition);
   }
   .social-dark__link:hover, .social-dark__link:focus {
     background-color: var(--accent-color);
@@ -1181,7 +1181,7 @@ img {
     width: 20px;
     height: 20px;
     fill: currentColor;
-    transition: --functcii--transition;
+    transition: var(--functcii--transition);
   }
   .social-list__link:hover .social-list__icon,
   .social-list__link:focus .social-list__icon {
