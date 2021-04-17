@@ -36,6 +36,6 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: var(--card-set-gap);
   }
 }

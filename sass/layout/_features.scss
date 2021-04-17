@@ -8,7 +8,7 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: var(--card-set-gap);
   }
 }
 
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  margin-bottom: 30px;
+  margin-bottom: var(--card-set-gap);
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -54,8 +54,8 @@
   }
 
   .features-list__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
   }
 
   .features-list > .features-list__item {
@@ -82,7 +82,7 @@
     margin-bottom: auto;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: var(--card-set-gap);
     }
   }
 
@@ -108,7 +108,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    margin-bottom: 30px;
+    margin-bottom: var(--card-set-gap);
     background: #f5f4fa;
     border-radius: 4px;
   }

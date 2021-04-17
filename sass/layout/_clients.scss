@@ -8,7 +8,7 @@
   font-weight: 700;
   text-align: center;
   color: var(--accent-text-color);
-  margin-bottom: 30px;
+  margin-bottom: var(--card-set-gap);
   padding: 0;
 }
 
@@ -21,8 +21,8 @@
 }
 
 .clients__item {
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .clients > .clients__item {

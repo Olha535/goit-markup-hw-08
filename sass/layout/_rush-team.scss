@@ -3,12 +3,12 @@
   font-weight: 700;
   text-align: center;
   color: var(--accent-text-color);
-  padding-bottom: 30px;
+  padding-bottom: var(--card-set-gap);
   padding-top: 60px;
 }
 
 .team-list__box {
-  padding-top: 30px;
+  padding-top: var(--card-set-gap);
   padding-bottom: 24px;
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -53,7 +53,7 @@
     background: var(--color-white);
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: var(--card-set-gap);
     }
   }
 }
@@ -78,8 +78,8 @@
   }
 
   .team-list__item {
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
     margin-bottom: 0;
   }
 
@@ -138,7 +138,7 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: var(--card-set-gap);
       margin-bottom: 0px;
     }
   }
